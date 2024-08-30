@@ -1,0 +1,10 @@
+body {
+  background-color:#100c1d;
+  background-image:url("imagenes/fn.jpg");
+}
+.contact {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 0, 0);
+}
+

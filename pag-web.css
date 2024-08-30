@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a0614;
+}
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.encabezado {
+    background-image: url(images/web-i.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    padding: 80px 0;
+}.popular-content {
+    display: flex;
+    justify-content: space-between;
+}
+.popular-content img {
+    width: 150px;
+}
+
+.logo {
+    color: #ff0000;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.contenido-producto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.botones {
+    display: flex;
+}
+.btn-1, .btn-2, .btn-3 {
+    display: inline-block;
+    padding: 11px 35px;
+    border: 2px solid #ff0000;
+    border-radius: 25px;
+    margin-right: 25px;
+    font-size: 17px;
+    color: #FFFFFF;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 28px;
+    color: #FFFFFF;
+    font-weight: 600;
+    display: block;
+}
+.menu .navbar ul li a:hover {
+    color: #ff0000;
+}
+#menu {
+    display: none;
+}
+.menu-icono {
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.header-content {
+    display: flex;
+}
+.texto {
+    flex-basis: 50%;
+}
+.texto h1 {
+    font-size: 60px;
+    color: #FFFFFF;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+.texto span {
+    color: #ff0000;
+}
+.texto p {
+    font-size: 17px;
+    color: #E0E0E0;
+    margin-bottom: 45px;
+}
+
+.btn-1:hover {
+    background-color: #ff0000;
+}
+.popular {
+    padding: 100px 0;
+    text-align: center;
+}
+h2 {
+    color: #FFFFFF;
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-1 {
+    background-color: #211530;
+}
+.product.txt {
+    padding: 50px 30px;
+}
+h3 {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.precio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.precio p {
+    font-size: 17px;
+    color: #ff0000;
+}
+.btn-2 {
+    padding: 5px 25px;
+    background-color: #ff0000;
+    margin-right: 0;
+}
+.contact {
+    padding: 150px 300px;
+}
+.contact-content {
+    background-color: #211530;
+    text-align: center;
+    padding: 50px;
+    border-radius: 50px;
+}
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+input {
+    padding: 18px 25px;
+    background-color: #1a0a0a;
+    border: 0;
+    border-radius: 25px;
+    outline: none;
+    margin-right: 10px;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+::placeholder {
+    color: #f7f0f0;
+    font-size: 17px;
+}
+.btn-3 {
+    background-color: #fc0000;
+    cursor: pointer;
+    margin-right: 0;
+}
+@media(max-width:991px) {
+    .menu {
+        padding: 20px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ff0000;
+        display: none;
+    }
+    .menu .navbar ul li a:hover {
+        color: #17143d;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    .header {
+        min-height: 0vh;
+        padding: 80px 30px 50px 30px;
+    }
+    .texto {
+        text-align: center;
+        flex: 100%;
+    }
+    .heade-txt h1 {
+        font-size: 50 px;
+        margin-bottom: 15px;
+    }
+    .botones {
+        justify-content: center;
+    }
+    .btn-1:last-of-type {
+        margin-right: 0;
+    }
+    .popular {
+        display: none;
+    }
+    .product {
+        padding: 30px;
+    }
+    .contenido-producto {
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+    }
+    .product-1 img {
+        width: 100%;
+    }
+    form {
+        flex-direction: column;
+    }
+    input {
+        margin: 0 0 20px 0;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .link ul {
+        margin-top: 20px;
+    }
+
+}
